@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <script>
+        // int a = 5 
+        // var const let 
+        // const a = "5.5"
+        // var phạm vi là cục bộ 
+        // const có phạm vi là block scope k được thay đổi 
+        // let giá trị sẽ có thể thay đổi
+        function vars() {
+            if (true) {
+                var x = 10;
+                x = 20
+                console.log(x)
+            }
+            console.log('X ngoài khối lệnh ' + x)
+        }
+        vars()
+        function consts() {
+            if (true) {
+                const x = 10;
+                //x = 20
+                console.log(x)
+            }
+            //console.log('X ngoài khối lệnh ' + x)
+        }
+        consts()
+        function lets() {
+            if (true) {
+                let x = 20;
+                x = 30
+                console.log(x)
+            }
+            //console.log('X ngoài khối lệnh '+x)
+        }
+        lets()
+        // Toán tử số học + - * / % 
+        const a = 4
+        const b = 6
+        const sum = a + b
+        console.log(sum)
+        // Toán tử gán 
+        let x = 15;
+        console.log(x)
+        x -= 5 // x = x + 5
+        console.log(x)
+        // Toán tử so sánh 
+        let c = 5
+        let d = "5"
+        console.log(c < d)
+        console.log(c == d) // so sánh giá trị
+        console.log(c === d) // so sánh giá trị + kiểu dữ liệu
+        // Toán tử logic
+        let mua = true;
+        let lanh = true;
+        if (mua && lanh) {
+            console.log('Trời mưa + lạnh ')
+        }
+        else {
+            console.log('Trời mưa k lạnh ')
+        }
+        // ++ --
+        let num = 0
+        num++
+        console.log(num)
+        num--
+        console.log(num)
+        // Toán tử 3 ngôi
+        let age = 20 
+        let checkAge =  ( age == 20 ) ? "Đúng" : "Sai"
+        console.log(checkAge)
+        // Toán tử nối chuỗi
+        let ho = "Chó"
+        let ten = "Khoái"
+        let hovaten = ho + " Đực " + ten
+        console.log(hovaten)
+        // Viết một chương trình JavaScript tính diện tích hình chữ nhật.
+        // Sử dụng biến để lưu chiều dài và chiều rộng, 
+        // sau đó sử dụng toán tử nhân để tính diện tích.
+
+        // Bài 2
+        // Viết một chương trình JavaScript tính giá trị biểu thức: (5 + 10) * 2 / 3.
+    </script>
+
+    git init : Khởi tạo ra một repository mới trong thư mục hiện tại.
+    git add : Đưa các tập tin từ thư mục vào trạng thái chờ 
+    git commit -m : Tạo một commit để miêu tả chức năng hoặc trạng thái của dự án 
+    git push : Đẩy các commit từ local repository lên remote repository.
+</body>
+
+</html>
